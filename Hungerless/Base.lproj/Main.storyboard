@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hungerless" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Home Page View Controller" customClass="ViewController" customModule="Hungerless" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,18 +58,18 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Donate View Controller-->
         <scene sceneID="bJk-pj-9VT">
             <objects>
-                <viewController id="pyi-cc-CgF" sceneMemberID="viewController">
+                <viewController id="pyi-cc-CgF" userLabel="Donate View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2hp-ly-eqR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGr-ru-gya">
-                                <rect key="frame" x="166" y="81" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donate a Meal!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGr-ru-gya">
+                                <rect key="frame" x="62" y="76" width="250" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -78,56 +78,89 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae7-U9-eMP">
+                                <rect key="frame" x="32" y="131" width="307" height="309"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="307" id="bAv-Ke-tZ5"/>
+                                    <constraint firstAttribute="height" constant="309" id="tqE-Lw-V9z"/>
+                                </constraints>
+                                <mutableString key="text">Food Donations are accepted at pantries all around New York City. The food you give is distributed to those who cannot afford any meal for themselves or even their families. We hope to work to change hunger in New York City by raising awarness about places to donate food to those people. Click below to find an location near you accepting donations. Please keep in mind that junk/unhealthy and sugar filled foods are not accepted in any one of our parners food drives. Opened food will also not be accepted in any way</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ae7-U9-eMP" firstAttribute="centerX" secondItem="2hp-ly-eqR" secondAttribute="centerX" constant="-2" id="8WU-ki-aey"/>
+                            <constraint firstItem="Ae7-U9-eMP" firstAttribute="centerY" secondItem="2hp-ly-eqR" secondAttribute="centerY" constant="-120.5" id="kWF-Vp-FpN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HBU-0c-0Td"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GyB-Ek-eWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="818" y="134"/>
+            <point key="canvasLocation" x="816.79999999999995" y="133.74384236453201"/>
         </scene>
-        <!--View Controller-->
+        <!--Collect View Controller-->
         <scene sceneID="vgz-3g-THu">
             <objects>
-                <viewController id="oRq-82-OYa" sceneMemberID="viewController">
+                <viewController id="oRq-82-OYa" userLabel="Collect View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIy-sa-Yxe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQf-U1-iya">
-                                <rect key="frame" x="166" y="85" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Collect a Meal!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQf-U1-iya">
+                                <rect key="frame" x="63" y="65" width="253" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oas-pT-KrX">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oas-pT-KrX" userLabel="0">
                                 <rect key="frame" x="166" y="687" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPI-zb-XLU">
+                                <rect key="frame" x="16" y="140" width="351" height="292"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="351" id="Mva-fs-JkJ"/>
+                                    <constraint firstAttribute="height" constant="292" id="Ppi-BN-tsx"/>
+                                </constraints>
+                                <string key="text">We understand that not every one can afford to pay for their own meals every day. Below is a list of pantries and food donation centers where you can go and get meals for free. Spread the word about these locations to anyone who need help as well, so they can get the meals they need.  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aPI-zb-XLU" firstAttribute="centerX" secondItem="IIy-sa-Yxe" secondAttribute="centerX" constant="4" id="2yq-Mr-Fq2"/>
+                            <constraint firstItem="aPI-zb-XLU" firstAttribute="centerY" secondItem="IIy-sa-Yxe" secondAttribute="centerY" constant="-120" id="qgf-TF-SU1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LIH-sl-PC1"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSr-V8-HlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="134"/>
+            <point key="canvasLocation" x="1544.8" y="133.74384236453201"/>
         </scene>
-        <!--View Controller-->
+        <!--About Us View Controller-->
         <scene sceneID="cnl-jC-fIx">
             <objects>
-                <viewController id="WsZ-Ma-TJA" sceneMemberID="viewController">
+                <viewController id="WsZ-Ma-TJA" userLabel="About Us View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7KR-2m-gwm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLC-EK-VvK">
-                                <rect key="frame" x="166" y="82" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Learn About Us!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLC-EK-VvK">
+                                <rect key="frame" x="53" y="66" width="269" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="Hca-8U-NFI"/>
+                                    <constraint firstAttribute="height" constant="47" id="hcb-N1-DOB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -136,8 +169,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-bB-YtO">
+                                <rect key="frame" x="34" y="135" width="307" height="309"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="309" id="FXE-8t-vvi"/>
+                                    <constraint firstAttribute="width" constant="307" id="uFF-hM-lvG"/>
+                                </constraints>
+                                <string key="text">Our names are Macy, Brooke, and Josephine, and we decided in 2019 that we wanted to make a positive change to the world around us through coding. We worked with teachers from the organization Girls Who Code to help learn the nessasary coding skills we needed to make our app. Then we began to work tirelessly to create our app to help end hunger in NYC. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g2T-bB-YtO" firstAttribute="centerX" secondItem="7KR-2m-gwm" secondAttribute="centerX" id="0m2-fd-OpD"/>
+                            <constraint firstItem="g2T-bB-YtO" firstAttribute="centerY" secondItem="7KR-2m-gwm" secondAttribute="centerY" constant="-116.5" id="EM6-5v-jGt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dbs-DE-JdL"/>
                     </view>
                 </viewController>
@@ -145,26 +193,26 @@
             </objects>
             <point key="canvasLocation" x="2224.8000000000002" y="133.74384236453201"/>
         </scene>
-        <!--View Controller-->
+        <!--Locations View Controller-->
         <scene sceneID="OlF-pL-Mbu">
             <objects>
-                <viewController id="490-1u-cik" sceneMemberID="viewController">
+                <viewController id="490-1u-cik" userLabel="Locations View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YcL-g8-BQr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-9V-Cgd">
-                                <rect key="frame" x="166" y="70" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX0-1I-uPh">
                                 <rect key="frame" x="166" y="706" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-9V-Cgd">
+                                <rect key="frame" x="76" y="65" width="227" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mi8-4i-Yyz"/>
