@@ -84,7 +84,7 @@
                                     <constraint firstAttribute="width" constant="307" id="bAv-Ke-tZ5"/>
                                     <constraint firstAttribute="height" constant="309" id="tqE-Lw-V9z"/>
                                 </constraints>
-                                <mutableString key="text">Food Donations are accepted at pantries all around New York City. The food you give is distributed to those who cannot afford any meal for themselves or even their families. We hope to work to change hunger in New York City by raising awarness about places to donate food to those people. Click below to find an location near you accepting donations. Please keep in mind that junk/unhealthy and sugar filled foods are not accepted in any one of our parners food drives. Opened food will also not be accepted in any way</mutableString>
+                                <string key="text">Food Donations are accepted at pantries all around New York City. The food you give is distributed to those who cannot afford any meal for themselves or even their families. We hope to work to change hunger in New York City by raising awarness about places to donate food to those people. Click below to find an location near you accepting donations. Please keep in mind that junk/unhealthy and sugar filled foods are not accepted in any one of our parners food drives. Opened food will also not be accepted in any way</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -202,12 +202,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX0-1I-uPh">
-                                <rect key="frame" x="166" y="706" width="46" height="30"/>
+                                <rect key="frame" x="295" y="748" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EiF-Of-YYj">
+                                <rect key="frame" x="0.0" y="153" width="375" height="587"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Locations" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-9V-Cgd">
-                                <rect key="frame" x="76" y="65" width="227" height="66"/>
+                                <rect key="frame" x="74" y="44" width="227" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <nil key="textColor"/>
@@ -220,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iE1-PX-Ds9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="134"/>
+            <point key="canvasLocation" x="2877.5999999999999" y="133.74384236453201"/>
         </scene>
     </scenes>
 </document>
