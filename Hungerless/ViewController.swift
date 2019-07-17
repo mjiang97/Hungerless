@@ -9,12 +9,39 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBOutlet weak var leadingC: NSLayoutConstraint!
+    
+    @IBOutlet weak var trailingC: NSLayoutConstraint!
+    
+    @IBOutlet weak var menuView: UIView!
+    
+    var menuViewIsVisible = false
+    
+    @IBAction func menuButton(_ sender: Any) {
+        if !menuViewIsVisible {
+            leadingC.constant = 200
+            trailingC.constant = -200
+            
+            menuViewIsVisible = true
+        } else {
+            leadingC.constant = 0
+            trailingC.constant = 0
+            
+            menuViewIsVisible = false
+        }
+        
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+            
+        }) { (animationComplete) in
+            print("The animation is complete!")
+    }
+}
+
 
 
 }
-
