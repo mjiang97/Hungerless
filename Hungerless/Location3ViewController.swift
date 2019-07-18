@@ -19,14 +19,10 @@ class Location3ViewController: UIViewController, CLLocationManagerDelegate {
     var mapView: GMSMapView!
     var placesClient: GMSPlacesClient!
     var zoomLevel: Float = 15.0
-    
-    // An array to hold the list of likely places.
     var likelyPlaces: [GMSPlace] = []
-    
-    // The currently selected place.
     var selectedPlace: GMSPlace?
-    
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager = CLLocationManager()
@@ -48,7 +44,6 @@ class Location3ViewController: UIViewController, CLLocationManagerDelegate {
         mapView.settings.zoomGestures = true
         self.view = mapView
     
-        
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: 40.71753, longitude: -74.00162)
         marker.title = "The Bowery Mission"
@@ -464,6 +459,13 @@ class Location3ViewController: UIViewController, CLLocationManagerDelegate {
         marker69.snippet = "227 Bowery, New York, NY 10002"
         marker69.map = mapView
         
+        let marker70 = GMSMarker()
+        marker70.position = CLLocationCoordinate2D(latitude: 40.78562, longitude: -73.98054)
+        marker70.title = "The Hungerless Headquarters"
+        marker70.snippet = "433 West End Ave, New York, NY 10024"
+        marker70.map = mapView
+        marker70.icon = UIImage(named: "headquarters")
+
         
     }
     
