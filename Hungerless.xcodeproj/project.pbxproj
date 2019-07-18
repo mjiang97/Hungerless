@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A0775D845F74AAA6D3B8046C /* libPods-Hungerless.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806E3D4E531B67533DD349EB /* libPods-Hungerless.a */; };
+		CC66291722DF99830058DCC8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC66291622DF99830058DCC8 /* CoreLocation.framework */; };
+		CC66291922DFB0310058DCC8 /* Location4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC66291822DFB0310058DCC8 /* Location4ViewController.swift */; };
 		CC71217B22DCD9B400993020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71217A22DCD9B400993020 /* AppDelegate.swift */; };
 		CC71217D22DCD9B400993020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC71217C22DCD9B400993020 /* ViewController.swift */; };
 		CC71218022DCD9B400993020 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC71217E22DCD9B400993020 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		806E3D4E531B67533DD349EB /* libPods-Hungerless.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hungerless.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DA5DF912399320F24436C7 /* Pods-Hungerless.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungerless.debug.xcconfig"; path = "Target Support Files/Pods-Hungerless/Pods-Hungerless.debug.xcconfig"; sourceTree = "<group>"; };
+		CC66291622DF99830058DCC8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CC66291822DFB0310058DCC8 /* Location4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location4ViewController.swift; sourceTree = "<group>"; };
 		CC71217722DCD9B400993020 /* Hungerless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hungerless.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC71217A22DCD9B400993020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC71217C22DCD9B400993020 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC66291722DF99830058DCC8 /* CoreLocation.framework in Frameworks */,
 				A0775D845F74AAA6D3B8046C /* libPods-Hungerless.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +61,7 @@
 		682A75B42AF6CD98032514ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CC66291622DF99830058DCC8 /* CoreLocation.framework */,
 				806E3D4E531B67533DD349EB /* libPods-Hungerless.a */,
 			);
 			name = Frameworks;
@@ -86,6 +92,7 @@
 				CC71217C22DCD9B400993020 /* ViewController.swift */,
 				CC71217E22DCD9B400993020 /* Main.storyboard */,
 				CC7121B422DE4B4C00993020 /* Location3ViewController.swift */,
+				CC66291822DFB0310058DCC8 /* Location4ViewController.swift */,
 				CC71218422DCD9BB00993020 /* Assets.xcassets */,
 				CC71218622DCD9BB00993020 /* LaunchScreen.storyboard */,
 				CC71218922DCD9BB00993020 /* Info.plist */,
@@ -213,6 +220,7 @@
 				CC71218322DCD9B400993020 /* Hungerless.xcdatamodeld in Sources */,
 				CC71217B22DCD9B400993020 /* AppDelegate.swift in Sources */,
 				CC7121B522DE4B4C00993020 /* Location3ViewController.swift in Sources */,
+				CC66291922DFB0310058DCC8 /* Location4ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
