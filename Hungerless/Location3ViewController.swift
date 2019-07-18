@@ -465,6 +465,195 @@ class Location3ViewController: UIViewController, CLLocationManagerDelegate {
         marker70.snippet = "433 West End Ave, New York, NY 10024"
         marker70.map = mapView
         marker70.icon = UIImage(named: "headquarters")
+        
+        let marker71 = GMSMarker()
+        marker71.position = CLLocationCoordinate2D(latitude: 44.87312, longitude: -0.55959)
+        marker71.title = "Food Bank of Bordeaux and Gironde"
+        marker71.snippet = "ZI Alfred Daney, Rue Bougainville, 33000 Bordeaux, France"
+        marker71.map = mapView
+        
+        let marker72 = GMSMarker()
+        marker72.position = CLLocationCoordinate2D(latitude: 31.7449, longitude: 35.21162)
+        marker72.title = "Pantry Packers"
+        marker72.snippet = "Derech Moshe Bar'am, Jerusalem, Israel"
+        marker72.map = mapView
+        
+        let marker73 = GMSMarker()
+        marker73.position = CLLocationCoordinate2D(latitude: 47.51753, longitude: -111.27913)
+        marker73.title = "Great Falls Community Food Bank"
+        marker73.snippet = "1620 12th Avenue N, Great Falls, MT 59401"
+        marker73.map = mapView
+        
+        let marker74 = GMSMarker()
+        marker74.position = CLLocationCoordinate2D(latitude: 37.442, longitude: -86.89521)
+        marker74.title = "Ohio County Food Pantry"
+        marker74.snippet = "S, 1220 Old Main St, Hartford, KY 42347"
+        marker74.map = mapView
+        
+        let marker75 = GMSMarker()
+        marker75.position = CLLocationCoordinate2D(latitude: 35.84352, longitude: -86.39907)
+        marker75.title = "Nourish Food Bank"
+        marker75.snippet = "211 Bridge Avenye, Murfreesboro, TN 37129"
+        marker75.map = mapView
+        
+        let marker76 = GMSMarker()
+        marker76.position = CLLocationCoordinate2D(latitude: 35.98445, longitude: -86.52517)
+        marker76.title = "Nourish Food Bank"
+        marker76.snippet = "130 Richardson St, Smyrna, TN 37167"
+        marker76.map = mapView
+        
+        let marker77 = GMSMarker()
+        marker77.position = CLLocationCoordinate2D(latitude: 34.93835, longitude: -88.52519)
+        marker77.title = "Amen Food Pantry "
+        marker77.snippet = "Corinth, MS 38834"
+        marker77.map = mapView
+        
+        let marker78 = GMSMarker()
+        marker78.position = CLLocationCoordinate2D(latitude: 33.14554, longitude: -86.26298)
+        marker78.title = "Alabama Childhood Food Solutions"
+        marker78.snippet = "114 Canyon Ridge Rd, Sylacauga, AL 35151"
+        marker78.map = mapView
+        
+        let marker79 = GMSMarker()
+        marker79.position = CLLocationCoordinate2D(latitude: 64.8231, longitude: -147.71672)
+        marker79.title = "Fairbanks Community Food Bank"
+        marker79.snippet = "725 26th Ave #101, Fairbanks, AK 99701"
+        marker79.map = mapView
+        
+        let marker80 = GMSMarker()
+        marker80.position = CLLocationCoordinate2D(latitude: 59.64992, longitude: -151.52354)
+        marker80.title = "Homer Food Pantry"
+        marker80.snippet = "770 East End Rd, Homer, AK 99603"
+        marker80.map = mapView
+        
+        let marker81 = GMSMarker()
+        marker81.position = CLLocationCoordinate2D(latitude: 61.22304, longitude: -149.84128)
+        marker81.title = "Food Bank of Alaska "
+        marker81.snippet = "2121 Spar Ave, Anchorage, AK 99501"
+        marker81.map = mapView
+        
+        let marker82 = GMSMarker()
+        marker82.position = CLLocationCoordinate2D(latitude: 61.20225, longitude: -149.81082)
+        marker82.title = "St, Francis House Food Pantry"
+        marker82.snippet = "3710 E 20th Ave, Anchorage, AK 99508"
+        marker82.map = mapView
+        
+        let marker83 = GMSMarker()
+        marker83.position = CLLocationCoordinate2D(latitude: 40.65677, longitude: -111.99696)
+        marker83.title = "Kearns Food Pantry"
+        marker83.snippet = "4445 W 5175 S, Kearns, UT 84118"
+        marker83.map = mapView
+        marker.icon = GMSMarker.markerImage(with: .green)
+        
+        let marker84 = GMSMarker()
+        marker84.position = CLLocationCoordinate2D(latitude: 41.10326, longitude: -111.94967)
+        marker84.title = "Open Doors"
+        marker84.snippet = "875 UT-193, Layton, UT 84041"
+        marker84.map = mapView
+        marker.icon = GMSMarker.markerImage(with: .purple)
+        
+        let marker85 = GMSMarker()
+        marker85.position = CLLocationCoordinate2D(latitude: 40.89062, longitude: -111.86984)
+        marker85.title = "Bountiful Food Pantry "
+        marker85.snippet = "480 E 150 N, Bountiful, UT 84010"
+        marker85.map = mapView
+        marker.icon = GMSMarker.markerImage(with: .blue)
+        
+        let marker86 = GMSMarker()
+        marker86.position = CLLocationCoordinate2D(latitude: 40.26094, longitude: -74.81069)
+        marker86.title = "Mercer Street Friends Food Bank"
+        marker86.snippet = "824 Silvia St, Ewing Township, NJ 08628"
+        marker86.map = mapView
+        
+        let marker87 = GMSMarker()
+        marker87.position = CLLocationCoordinate2D(latitude: 40.85021, longitude: -74.78404)
+        marker87.title = "Mount Olive Food Pantry"
+        marker87.snippet = "6 Naughright Rd, Hackettstown, NJ 07840"
+        marker87.map = mapView
+        
+        let marker88 = GMSMarker()
+        marker88.position = CLLocationCoordinate2D(latitude: 32.26869, longitude: -76.20858)
+        marker88.title = "Food Bank of the Albemarle"
+        marker88.snippet = "109 Tidewater Way, Elizabeth City, NC 27909"
+        marker88.map = mapView
+        
+        let marker89 = GMSMarker()
+        marker89.position = CLLocationCoordinate2D(latitude: 64.8231, longitude: -147.71672)
+        marker89.title = "Sandwich Food Pantry "
+        marker89.snippet = "331 Cotuit Rd, Sandwich, MA 02563"
+        marker89.map = mapView
+        
+        let marker90 = GMSMarker()
+        marker90.position = CLLocationCoordinate2D(latitude: 41.69932, longitude: -70.58668)
+        marker90.title = "Bourne Friends Food Pantry "
+        marker90.snippet = "20 Commerce Park Rd, Pocasset, MA 02559"
+        marker90.map = mapView
+        
+        let marker91 = GMSMarker()
+        marker91.position = CLLocationCoordinate2D(latitude: 35.14648, longitude: -106.6003)
+        marker91.title = "Roadrunner Food Bank"
+        marker91.snippet = "5840 Office Blvd NE, Albuquerque, NM 87109"
+        marker91.map = mapView
+        
+        let marker92 = GMSMarker()
+        marker92.position = CLLocationCoordinate2D(latitude: 41.75619, longitude: -70.65231)
+        marker92.title = "Damien's Place Food Pantry"
+        marker92.snippet = "3065 Cranberry Hwy # B20, East Wareham, MA 02538"
+        marker92.map = mapView
+        
+        let marker93 = GMSMarker()
+        marker93.position = CLLocationCoordinate2D(latitude: 41.65202, longitude: -70.21371)
+        marker93.title = "Yarmouth Food Pantry"
+        marker93.snippet = "845 MA-28, South Yarmouth, MA 02664"
+        marker93.map = mapView
+        
+        let marker94 = GMSMarker()
+        marker94.position = CLLocationCoordinate2D(latitude: 29.78971, longitude: -95.37457)
+        marker94.title = "Heights Interfaith Minitries Food Pantry"
+        marker94.snippet = "3523 Beauchamp St, Houston, TX 77009"
+        marker94.map = mapView
+        
+        let marker95 = GMSMarker()
+        marker95.position = CLLocationCoordinate2D(latitude: 29.80359, longitude: -95.49345)
+        marker95.title = "Faith Center - Food Pantry & Clothes Closet"
+        marker95.snippet = "8244 Long Point Rd, Houston, TX 77055"
+        marker95.map = mapView
+        
+        let marker96 = GMSMarker()
+        marker96.position = CLLocationCoordinate2D(latitude: 29.79439, longitude: -95.48574)
+        marker96.title = "East Spring Branch Food Pantry"
+        marker96.snippet = "7901 Westview Dr, Houston, TX 77055"
+        marker96.map = mapView
+        
+        let marker97 = GMSMarker()
+        marker97.position = CLLocationCoordinate2D(latitude: 29.71484, longitude: -95.54853)
+        marker97.title = "Food Pantry and Clothes Closet"
+        marker97.snippet = "5860 Ranchester Dr, Houston, TX 77036"
+        marker97.map = mapView
+        
+        let marker98 = GMSMarker()
+        marker98.position = CLLocationCoordinate2D(latitude: 29.72166, longitude: -950015)
+        marker98.title = "Food Pantry - ICNA Relief Houston"
+        marker98.snippet = "5645 Hillcroft Ave Suite #405, Houston, TX 77074"
+        marker98.map = mapView
+        
+        let marker99 = GMSMarker()
+        marker99.position = CLLocationCoordinate2D(latitude: 40.42939, longitude: -88.98699)
+        marker99.title = "Temba Food Pantry"
+        marker99.snippet = "14940 Old Colonial Rd, Bloomington, IL 61705"
+        marker99.map = mapView
+        
+        let marker100 = GMSMarker()
+        marker100.position = CLLocationCoordinate2D(latitude: 37.24294, longitude: -77.39172)
+        marker100.title = "Colonial Heights Food Pantry"
+        marker100.snippet = "530 Southpark Blvd, Colonial Heights, VA 23834"
+        marker100.map = mapView
+        
+        let marker101 = GMSMarker()
+        marker101.position = CLLocationCoordinate2D(latitude: 47.49534, longitude: 19.23189)
+        marker101.title = "Hungarian Food Bank Association"
+        marker101.snippet = "Budapest, Lokátor u. 3, 1172 Hungary"
+        marker101.map = mapView
 
         
     }
