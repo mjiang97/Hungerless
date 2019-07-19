@@ -426,35 +426,159 @@
             </objects>
             <point key="canvasLocation" x="1076" y="-513.54679802955673"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Us View Controller-->
         <scene sceneID="h7J-Hi-adC">
             <objects>
-                <viewController id="ROy-lU-0D4" sceneMemberID="viewController">
+                <viewController id="ROy-lU-0D4" customClass="ContactUsViewController" customModule="Hungerless" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UP0-z0-auK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Us!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8b-lR-nFf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8b-lR-nFf">
                                 <rect key="frame" x="45" y="64" width="284" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="62"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb" translatesAutoresizingMaskIntoConstraints="NO" id="itf-Dj-q2O">
-                                <rect key="frame" x="45" y="196" width="89" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb" translatesAutoresizingMaskIntoConstraints="NO" id="itf-Dj-q2O">
+                                <rect key="frame" x="-10" y="157" width="99" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="DhA-PN-TSe"/>
+                                    <constraint firstAttribute="width" constant="99" id="MuE-pj-Oa1"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-rJ-7QJ">
-                                <rect key="frame" x="135" y="396" width="58" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-rJ-7QJ">
+                                <rect key="frame" x="103" y="288" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="25L-kc-DJz"/>
+                                    <constraint firstAttribute="width" constant="64" id="qJo-ni-Bk2"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="mfg-eb-A7x">
-                                <rect key="frame" x="93" y="299" width="68" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitter" translatesAutoresizingMaskIntoConstraints="NO" id="mfg-eb-A7x">
+                                <rect key="frame" x="53" y="222" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="3tr-ti-XJb"/>
+                                    <constraint firstAttribute="height" constant="68" id="uzE-RB-Fsh"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTJ-8K-eRe">
+                                <rect key="frame" x="92" y="172" width="180" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="@GirlsWhoCode"/>
+                                <connections>
+                                    <action selector="openWebsite:" destination="ROy-lU-0D4" eventType="touchUpInside" id="RID-dg-PCf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMQ-q3-67g">
+                                <rect key="frame" x="139" y="235" width="180" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="@GirlsWhoCode"/>
+                                <connections>
+                                    <action selector="goToLink:" destination="ROy-lU-0D4" eventType="touchUpInside" id="gDq-NF-KFu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F4-i5-F3J">
+                                <rect key="frame" x="193.5" y="299" width="167" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="@girlswhocode"/>
+                                <connections>
+                                    <action selector="openLink:" destination="ROy-lU-0D4" eventType="touchUpInside" id="4oi-Y0-hwT"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myAvatar (2)" translatesAutoresizingMaskIntoConstraints="NO" id="Rpx-GC-81Q">
+                                <rect key="frame" x="16" y="383" width="105" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="RGn-xY-o6o"/>
+                                    <constraint firstAttribute="width" constant="105" id="fWt-hG-8V4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myAvatar (1)" translatesAutoresizingMaskIntoConstraints="NO" id="uCV-SN-f8I">
+                                <rect key="frame" x="129" y="448" width="106" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="mKD-NL-sVg"/>
+                                    <constraint firstAttribute="height" constant="109" id="xDr-1m-gGx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jojo" translatesAutoresizingMaskIntoConstraints="NO" id="EsN-NM-0aD">
+                                <rect key="frame" x="252" y="491" width="101" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="Yyq-yv-0DB"/>
+                                    <constraint firstAttribute="width" constant="101" id="fJ0-3b-P0g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Macy (Mango)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfb-cf-NyE">
+                                <rect key="frame" x="36" y="522" width="64" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="mQG-cV-gyp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brooke (Butter)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Pb-ux-paS">
+                                <rect key="frame" x="150" y="576" width="64" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="QCY-fA-61g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mango, Butter, and Jelly!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXh-ei-6IB">
+                                <rect key="frame" x="0.0" y="630" width="272" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="b5h-CE-zxU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Josephine (Jelly)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhb-Ha-thn">
+                                <rect key="frame" x="270" y="619" width="64" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="xYh-dH-nho"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BZa-jD-cGM" firstAttribute="trailing" secondItem="a8b-lR-nFf" secondAttribute="trailing" constant="46" id="6Qg-aQ-bOA"/>
+                            <constraint firstItem="NMQ-q3-67g" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="41.5" id="7yP-yb-c9h"/>
+                            <constraint firstItem="YTJ-8K-eRe" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="-140.5" id="8fQ-CR-DVj"/>
+                            <constraint firstItem="uCV-SN-f8I" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-5.5" id="8qQ-NE-FNT"/>
+                            <constraint firstItem="Rpx-GC-81Q" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="104" id="AXH-99-HnJ"/>
+                            <constraint firstItem="Sel-rJ-7QJ" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-52.5" id="CmW-e8-vpI"/>
+                            <constraint firstItem="CXh-ei-6IB" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-51.5" id="Dwp-o9-krk"/>
+                            <constraint firstItem="6F4-i5-F3J" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="-13.5" id="EMV-w0-LEh"/>
+                            <constraint firstItem="Xhb-Ha-thn" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="114.5" id="FUx-uN-gc5"/>
+                            <constraint firstItem="pfb-cf-NyE" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="200.5" id="GcZ-sG-RRL"/>
+                            <constraint firstItem="Rpx-GC-81Q" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-119" id="Ght-n5-mjC"/>
+                            <constraint firstItem="uCV-SN-f8I" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="169" id="HTo-2g-ZrR"/>
+                            <constraint firstItem="1Pb-ux-paS" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="254.5" id="Jqo-zl-XLH"/>
+                            <constraint firstItem="Xhb-Ha-thn" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="297.5" id="KfY-OM-l9B"/>
+                            <constraint firstItem="EsN-NM-0aD" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="115" id="LaE-Sf-YjV"/>
+                            <constraint firstItem="YTJ-8K-eRe" firstAttribute="top" secondItem="a8b-lR-nFf" secondAttribute="bottom" constant="23" id="Tc1-Fk-L5Y"/>
+                            <constraint firstItem="CXh-ei-6IB" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="316.5" id="UGt-l5-a1R"/>
+                            <constraint firstItem="Sel-rJ-7QJ" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="-13.5" id="V9z-S7-1i3"/>
+                            <constraint firstItem="1Pb-ux-paS" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-5.5" id="Vnc-k4-9Hz"/>
+                            <constraint firstItem="YTJ-8K-eRe" firstAttribute="leading" secondItem="itf-Dj-q2O" secondAttribute="trailing" constant="3" id="W61-fV-B94"/>
+                            <constraint firstItem="6F4-i5-F3J" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="89.5" id="WVO-WJ-UQl"/>
+                            <constraint firstItem="pfb-cf-NyE" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="200.5" id="XYW-aM-Rm1"/>
+                            <constraint firstItem="pfb-cf-NyE" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-119.5" id="eLs-dJ-31z"/>
+                            <constraint firstItem="itf-Dj-q2O" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="-140" id="fo3-wM-Os5"/>
+                            <constraint firstItem="YTJ-8K-eRe" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-5.5" id="jCg-02-fwK"/>
+                            <constraint firstItem="NMQ-q3-67g" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="-77.5" id="lfJ-p4-FrN"/>
+                            <constraint firstItem="itf-Dj-q2O" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-148" id="oSH-99-syW"/>
+                            <constraint firstItem="mfg-eb-A7x" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-100.5" id="pOw-iu-vbi"/>
+                            <constraint firstItem="pfb-cf-NyE" firstAttribute="centerX" secondItem="UP0-z0-auK" secondAttribute="centerX" constant="-119.5" id="sGT-0C-nzB"/>
+                            <constraint firstItem="a8b-lR-nFf" firstAttribute="leading" secondItem="BZa-jD-cGM" secondAttribute="leading" constant="45" id="sJD-03-jel"/>
+                            <constraint firstItem="a8b-lR-nFf" firstAttribute="top" secondItem="BZa-jD-cGM" secondAttribute="top" id="tFY-dN-DzK"/>
+                            <constraint firstItem="mfg-eb-A7x" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="-77.5" id="wWF-pu-mEq"/>
+                            <constraint firstItem="EsN-NM-0aD" firstAttribute="centerY" secondItem="UP0-z0-auK" secondAttribute="centerY" constant="212" id="weI-Py-YFT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BZa-jD-cGM"/>
                     </view>
                 </viewController>
@@ -489,7 +613,10 @@
         <image name="fb" width="800" height="600"/>
         <image name="heart" width="139" height="129"/>
         <image name="instagram" width="400" height="400"/>
+        <image name="jojo" width="200" height="200"/>
         <image name="menu" width="50" height="50"/>
+        <image name="myAvatar (1)" width="200" height="200"/>
+        <image name="myAvatar (2)" width="200" height="200"/>
         <image name="people-clipart-2" width="550" height="277"/>
         <image name="twitter" width="512" height="512"/>
     </resources>
